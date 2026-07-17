@@ -1,8 +1,13 @@
 import { X, Frown, Meh, Smile, Laugh } from "lucide-react";
+import { cn } from "../../lib/utils";
 
-export function ReviewWidget() {
+interface ReviewWidgetProps {
+  className?: string;
+}
+
+export function ReviewWidget({ className }: ReviewWidgetProps) {
   return (
-    <div className="bg-surface rounded-[32px] p-6 flex flex-col border border-border/40 relative">
+    <div className={cn("bg-surface rounded-[32px] p-6 flex flex-col border border-border/40 relative", className)}>
       <div className="absolute right-6 top-6 w-8 h-8 rounded-full bg-white border border-border flex items-center justify-center cursor-pointer hover:bg-gray-50 transition-colors shadow-sm">
         <X className="w-4 h-4 text-gray-500" />
       </div>

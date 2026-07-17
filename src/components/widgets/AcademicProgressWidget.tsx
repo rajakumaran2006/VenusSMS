@@ -1,11 +1,16 @@
 import { Clock, BarChart3 } from "lucide-react";
+import { cn } from "../../lib/utils";
 
-export function AcademicProgressWidget() {
+interface AcademicProgressWidgetProps {
+  className?: string;
+}
+
+export function AcademicProgressWidget({ className }: AcademicProgressWidgetProps) {
   return (
-    <div className="grid grid-cols-2 gap-6 w-full">
+    <div className={cn("grid grid-cols-1 sm:grid-cols-2 gap-6 w-full h-full", className)}>
       
       {/* Time Left Card */}
-      <div className="bg-surface rounded-[32px] p-6 flex flex-col justify-between border border-border/40">
+      <div className="bg-surface rounded-[32px] p-6 flex flex-col justify-between border border-border/40 h-full">
         <div className="flex flex-col gap-4">
           <div className="w-10 h-10 rounded-full bg-white border border-border flex items-center justify-center shadow-sm">
             <Clock className="w-5 h-5 text-black" />
@@ -32,7 +37,7 @@ export function AcademicProgressWidget() {
       </div>
 
       {/* Mini Bar Chart Card */}
-      <div className="bg-surface rounded-[32px] p-6 flex flex-col border border-border/40 relative overflow-hidden">
+      <div className="bg-surface rounded-[32px] p-6 flex flex-col border border-border/40 relative overflow-hidden h-full">
         <div className="w-10 h-10 rounded-full bg-white border border-border flex items-center justify-center shadow-sm mb-4 relative z-10">
           <BarChart3 className="w-5 h-5 text-black" />
         </div>

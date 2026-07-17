@@ -2,7 +2,7 @@ import { ChevronDown } from "lucide-react";
 
 export function DemographicsWidget() {
   return (
-    <div className="bg-white rounded-[32px] p-6 shadow-[0_2px_20px_rgba(0,0,0,0.03)] border border-border/40 flex-1 flex flex-col">
+    <div className="bg-white rounded-[32px] p-6 shadow-[0_2px_20px_rgba(0,0,0,0.03)] border border-border/40 flex-1 flex flex-col h-full">
       <div className="flex items-center justify-between w-full mb-8">
         <span className="font-semibold text-[15px]">Demographics</span>
         <button className="flex items-center gap-2 text-xs font-medium px-4 py-2 rounded-full border border-border hover:bg-surface transition-colors">
@@ -19,7 +19,7 @@ export function DemographicsWidget() {
                <span className="text-brand font-semibold text-sm">850</span>
                
                <div className="absolute bottom-0 w-[120px] h-[120px] rounded-full bg-brand/40 border border-brand/50 flex flex-col items-center justify-start pt-5">
-                  <span className="text-[#a63a25] font-semibold text-sm">300</span>
+                  <span className="text-[#450F45] font-semibold text-sm">300</span>
                   
                   <div className="absolute bottom-0 w-[70px] h-[70px] rounded-full bg-brand flex items-center justify-center shadow-lg shadow-brand/40">
                      <span className="text-white font-semibold text-sm">100</span>

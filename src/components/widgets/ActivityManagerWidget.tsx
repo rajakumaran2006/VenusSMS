@@ -80,7 +80,7 @@ export function ActivityManagerWidget() {
            <div className="flex flex-col gap-4">
               <div className="flex items-center justify-between bg-white px-4 py-3 rounded-2xl border border-border/40 shadow-sm cursor-pointer hover:border-gray-300 transition-colors">
                  <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 rounded-full bg-[#fcece9] flex items-center justify-center text-brand">
+                    <div className="w-8 h-8 rounded-full bg-brand-light/20 flex items-center justify-center text-brand">
                        <Users className="w-4 h-4" />
                     </div>
                     <span className="text-[13px] font-medium">Mark Attendance</span>
@@ -105,18 +105,6 @@ export function ActivityManagerWidget() {
               </div>
            </div>
 
-           <div className="mt-auto bg-white border border-border/40 rounded-[24px] p-5 flex flex-col gap-4 shadow-sm">
-              <div className="flex items-center gap-3">
-                 <Sun className="w-8 h-8 text-brand" strokeWidth={1.5} />
-                 <div className="flex flex-col">
-                    <span className="text-sm font-semibold">System Audit</span>
-                    <span className="text-[11px] text-gray-500 leading-tight">Run daily integrity check to secure records.</span>
-                 </div>
-              </div>
-              <button className="w-full bg-brand text-white rounded-full py-2.5 text-sm font-medium hover:bg-[#d6553e] transition-colors shadow-md shadow-brand/20">
-                 Run Now
-              </button>
-           </div>
         </div>
       </div>
     </div>

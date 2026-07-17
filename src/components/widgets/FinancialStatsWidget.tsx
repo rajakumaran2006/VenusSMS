@@ -16,7 +16,7 @@ export function FinancialStatsWidget() {
         </div>
         <div className="flex flex-col gap-1">
           <span className="text-gray-400 text-sm">Total Collected</span>
-          <span className="text-[32px] font-semibold tracking-tight text-brand">$ 23,194.80</span>
+          <span className="text-[32px] font-semibold tracking-tight text-brand">₹ 23,194.80</span>
         </div>
       </div>
 
@@ -34,7 +34,7 @@ export function FinancialStatsWidget() {
         <div className="flex items-end justify-between">
           <div className="flex flex-col gap-1">
             <span className="text-gray-400 text-sm">Pending Dues</span>
-            <span className="text-[32px] font-semibold tracking-tight text-brand">$ 8,145.20</span>
+            <span className="text-[32px] font-semibold tracking-tight text-brand">₹ 8,145.20</span>
           </div>
           <button className="flex items-center gap-2 text-brand text-xs font-medium hover:opacity-80 transition-opacity absolute bottom-8 right-6">
             <div className="w-6 h-6 rounded-full bg-brand-light flex items-center justify-center">

@@ -2,17 +2,7 @@ import { ChevronDown, Share2, Plus, PenSquare } from "lucide-react";
 
 export function CreditCardWidget() {
   return (
-    <div className="flex flex-col gap-4 h-full">
-      {/* Side floating actions - mimicking the image's floating bar */}
-      <div className="absolute left-4 top-[240px] w-12 bg-white rounded-full shadow-sm border border-border/50 py-4 flex flex-col items-center gap-6 hidden xl:flex">
-        <div className="w-1 h-8 bg-gray-200 rounded-full"></div>
-        <button className="text-gray-400 hover:text-black transition-colors">
-          <Plus className="w-5 h-5" />
-        </button>
-        <button className="text-gray-400 hover:text-black transition-colors">
-          <Share2 className="w-5 h-5" />
-        </button>
-      </div>
+    <div className="flex flex-col gap-4 h-full relative">
 
       <div className="bg-white rounded-[32px] p-6 shadow-[0_2px_20px_rgba(0,0,0,0.03)] border border-border/40 flex-1 flex flex-col">
         <div className="flex items-center justify-between mb-8">
@@ -41,7 +31,7 @@ export function CreditCardWidget() {
         <div className="flex items-end justify-between mt-auto">
           <div className="flex flex-col gap-1">
             <span className="text-gray-400 text-sm">Monthly SMS limit</span>
-            <span className="text-xl font-semibold">$ 25.00</span>
+            <span className="text-xl font-semibold">₹ 2,000</span>
           </div>
           <button className="flex items-center gap-2 text-brand text-xs font-medium hover:opacity-80 transition-opacity">
             <div className="w-6 h-6 rounded-full bg-brand-light flex items-center justify-center">

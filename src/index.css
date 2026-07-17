@@ -3,9 +3,9 @@
 
 @theme {
   --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
-  --color-brand: #DF5D46;
-  --color-brand-light: #FCECE9;
-  --color-surface: #F9F9F9;
+  --color-brand: #5E135E;
+  --color-brand-light: #9B519B;
+  --color-surface: #F5F5F7;
   --color-border: #EFEFEF;
 }
 
@@ -13,4 +13,20 @@ body {
   background-color: #EAEAEA;
   color: #111111;
   -webkit-font-smoothing: antialiased;
+}
+
+@utility hide-scrollbar {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@utility no-scrollbar {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
