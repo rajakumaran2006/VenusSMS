@@ -1,0 +1,6 @@
+{
+  "name": "RajivGandhiSMS",
+  "description": "School Management System with Gemini Lead Collector",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
